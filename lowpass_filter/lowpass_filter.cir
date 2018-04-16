@@ -1,0 +1,15 @@
+* /home/flamefly/Documents/kicad/spice_lowpass_filter/lowpass_filter/lowpass_filter.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Tue 17 Apr 2018 01:03:13 AM JST
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+R1  Vout Vin 10k		
+C1  Vout 0 15.9n		
+V1  Vin 0 DC 0 AC 1 sin(0 1.0 100k)		
+
+.include ./run.com
+
+* .end
